@@ -66,7 +66,7 @@ let action = try ArisenTransaction.Action(
      data: Transfer(
             from: ArisenName("useraaaaaa"),
             to: ArisenName("useraaaaab"),
-            quantity: "42.0000 RSN",
+            quantity: "42.0000 RIX",
             memo: "")
 )
 
