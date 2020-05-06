@@ -1,4 +1,4 @@
-![Swift Logo](https://raw.githubusercontent.com/EOSIO/eosio-swift/master/img/swift-logo.png)
+![Swift Logo](https://raw.githubusercontent.com/ARISENIO/arisen-swift/master/img/swift-logo.png)
 # Arisen SDK For Swift
 Arisen's Swift SDK is an API for integrating with Arisen-based blockchains using the Arisen RPC API. For a high-level introduction to our Swift and Java SDKs, please refer to our official release notes [here](https://medium.com/arisencoin/native-sdks-for-swift-and-java). To date, Arisen's Swift SDK has only been tested on iOS. Although, we hope for the core library to run anywhere that Swift runs, by expanding Arisen's Swift SDK to be compatible with other targets (macOS, watchOS and tvOS) as this library matures.
 

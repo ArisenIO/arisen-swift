@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Data Extension Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Extension/Data" class="dashAnchor"></a>
+
+    <a title="Data Extension Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          ArisenSwift Docs
+        </a>
+        
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/ARISENIO/arisen-swift">
+            <img class="header-icon" src="../img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">ArisenSwift Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      Data Extension Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Transactions.html">Transactions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ArisenTransaction.html">ArisenTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ArisenTransaction/Config.html">– Config</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ArisenTransaction/Abis.html">– Abis</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ArisenTransaction/Action.html">– Action</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ArisenTransactionFactory.html">ArisenTransactionFactory</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Provider%20Protocols.html">Provider Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ArisenSignatureProviderProtocol.html">ArisenSignatureProviderProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ArisenSerializationProviderProtocol.html">ArisenSerializationProviderProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ArisenAbiProviderProtocol.html">ArisenAbiProviderProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ArisenRpcProviderProtocol.html">ArisenRpcProviderProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Built-In%20Default%20Providers.html">Built-In Default Providers</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ArisenRpcProvider.html">ArisenRpcProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ArisenAbiProvider.html">ArisenAbiProvider</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../General%20Helpers%20%26%20Types.html">General Helpers &amp; Types</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ArisenName.html">ArisenName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/ArisenResult.html">ArisenResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/RIPEMD160.html">RIPEMD160</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/JsonOutput.html">JsonOutput</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/Base58String.html">Base58String</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Queue.html">Queue</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/LinkedList.html">LinkedList</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Node.html">Node</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Array.html">Array</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Data.html">Data</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Date.html">Date</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Dictionary.html">Dictionary</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Encodable.html">Encodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Resolver.html">Resolver</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/String.html">String</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Errors.html">Errors</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ArisenError.html">ArisenError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/ArisenErrorCode.html">ArisenErrorCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Error.html">Error</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Signature%20Provider%20Types.html">Signature Provider Types</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ArisenAvailableKeysResponse.html">ArisenAvailableKeysResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ArisenTransactionSignatureRequest.html">ArisenTransactionSignatureRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ArisenTransactionSignatureRequest/BinaryAbi.html">– BinaryAbi</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ArisenTransactionSignatureResponse.html">ArisenTransactionSignatureResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ArisenTransactionSignatureResponse/SignedTransaction.html">– SignedTransaction</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../RPC%20Provider%20Protocols.html">RPC Provider Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ArisenRpcResponseProtocol.html">ArisenRpcResponseProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ArisenRpcInfoResponseProtocol.html">ArisenRpcInfoResponseProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ArisenRpcBlockResponseProtocol.html">ArisenRpcBlockResponseProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ArisenRpcRawAbiResponseProtocol.html">ArisenRpcRawAbiResponseProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ArisenRpcRequiredKeysResponseProtocol.html">ArisenRpcRequiredKeysResponseProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ArisenRpcTransactionResponseProtocol.html">ArisenRpcTransactionResponseProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Default%20RPC%20Requests.html">Default RPC Requests</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Default%20RPC%20Requests.html#/s:10ArisenSwift0A13RpcAbiRequesta">ArisenRpcAbiRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Default%20RPC%20Requests.html#/s:10ArisenSwift0A17RpcAccountRequesta">ArisenRpcAccountRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ArisenRpcHistoryActionsRequest.html">ArisenRpcHistoryActionsRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Default%20RPC%20Requests.html#/s:10ArisenSwift0A26RpcBlockHeaderStateRequesta">ArisenRpcBlockHeaderStateRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ArisenRpcBlockRequest.html">ArisenRpcBlockRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ArisenRpcCodeRequest.html">ArisenRpcCodeRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ArisenRpcHistoryControlledAccountsRequest.html">ArisenRpcHistoryControlledAccountsRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ArisenRpcCurrencyBalanceRequest.html">ArisenRpcCurrencyBalanceRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ArisenRpcCurrencyStatsRequest.html">ArisenRpcCurrencyStatsRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ArisenRpcHistoryTransactionRequest.html">ArisenRpcHistoryTransactionRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ArisenRpcHistoryKeyAccountsRequest.html">ArisenRpcHistoryKeyAccountsRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ArisenRpcProducersRequest.html">ArisenRpcProducersRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ArisenRpcPushTransactionRequest.html">ArisenRpcPushTransactionRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ArisenRpcPushTransactionsRequest.html">ArisenRpcPushTransactionsRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ArisenRpcRawAbiRequest.html">ArisenRpcRawAbiRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Default%20RPC%20Requests.html#/s:10ArisenSwift0A23RpcRawCodeAndAbiRequesta">ArisenRpcRawCodeAndAbiRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ArisenRpcRequiredKeysRequest.html">ArisenRpcRequiredKeysRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ArisenRpcTableByScopeRequest.html">ArisenRpcTableByScopeRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ArisenRpcTableRowsRequest.html">ArisenRpcTableRowsRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ArisenRpcTableRowsRequest/EncodeType.html">– EncodeType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Default%20RPC%20Responses.html">Default RPC Responses</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ArisenRpcAbiResponse.html">ArisenRpcAbiResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ArisenRpcAccountResponse.html">ArisenRpcAccountResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ArisenRpcActionsResponse.html">ArisenRpcActionsResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ArisenRpcBlockHeaderStateResponse.html">ArisenRpcBlockHeaderStateResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ArisenRpcBlockResponse.html">ArisenRpcBlockResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ArisenRpcCodeResponse.html">ArisenRpcCodeResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ArisenRpcControlledAccountsResponse.html">ArisenRpcControlledAccountsResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ArisenRpcCurrencyBalanceResponse.html">ArisenRpcCurrencyBalanceResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ArisenRpcCurrencyStatsResponse.html">ArisenRpcCurrencyStatsResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ArisenRpcGetTransactionResponse.html">ArisenRpcGetTransactionResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ArisenRpcKeyAccountsResponse.html">ArisenRpcKeyAccountsResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ArisenRpcInfoResponse.html">ArisenRpcInfoResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ArisenRpcProducersResponse.html">ArisenRpcProducersResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ArisenRpcTransactionResponse.html">ArisenRpcTransactionResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ArisenRpcPushTransactionsResponse.html">ArisenRpcPushTransactionsResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ArisenRpcRawAbiResponse.html">ArisenRpcRawAbiResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ArisenRpcRawCodeAndAbiResponse.html">ArisenRpcRawCodeAndAbiResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ArisenRpcRequiredKeysResponse.html">ArisenRpcRequiredKeysResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ArisenRpcTableByScopeResponse.html">ArisenRpcTableByScopeResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ArisenRpcTableRowsResponse.html">ArisenRpcTableRowsResponse</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other%20RPC-Related%20Types.html">Other RPC-Related Types</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/RawResponse.html">RawResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/ArisenUInt64.html">ArisenUInt64</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ArisenAccountInfo.html">ArisenAccountInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ArisenRpcActionsResponseAction.html">ArisenRpcActionsResponseAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ArisenRpcActionsResponseActionTrActDeltas.html">ArisenRpcActionsResponseActionTrActDeltas</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ArisenRpcActionsResponseActionTrReceipt.html">ArisenRpcActionsResponseActionTrReceipt</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ArisenRpcActionsResponseActionTrace.html">ArisenRpcActionsResponseActionTrace</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ArisenRpcActionsResponseActionTraceAction.html">ArisenRpcActionsResponseActionTraceAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ArisenRpcActionsResponseActionTraceAuth.html">ArisenRpcActionsResponseActionTraceAuth</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ArisenRpcBlockHeaderStateResponseHeader.html">ArisenRpcBlockHeaderStateResponseHeader</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Authority.html">Authority</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/CurrencyStats.html">CurrencyStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/KeyWeight.html">KeyWeight</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Permission.html">Permission</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PermissionLevel.html">PermissionLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/PermissionLevelWeight.html">PermissionLevelWeight</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ProducerRows.html">ProducerRows</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/TableByScopeRows.html">TableByScopeRows</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/WaitWeight.html">WaitWeight</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other%20Enums.html">Other Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/ArisenInt64.html">ArisenInt64</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other%20Structs.html">Other Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ArisenRpcSendTransactionRequest.html">ArisenRpcSendTransactionRequest</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            <h1>Data</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">@frozen</span>
+<span class="kd">public</span> <span class="kd">extension</span> <span class="kt">Data</span></code></pre>
+
+                </div>
+              </div>
+            
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation4DataV10ArisenSwiftE14base58Decoding8alphabetACSgSS_Says5UInt8VGtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(base58Decoding:alphabet:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation4DataV10ArisenSwiftE14base58Decoding8alphabetACSgSS_Says5UInt8VGtcfc">init(base58Decoding:alphabet:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">?(</span><span class="n">base58Decoding</span> <span class="nv">string</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">alphabet</span><span class="p">:</span> <span class="p">[</span><span class="kt">UInt8</span><span class="p">]</span> <span class="o">=</span> <span class="kt"><a href="../Enums/Base58String.html">Base58String</a></span><span class="o">.</span><span class="n">btcAlphabet</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/ARISENIO/arisen-swift/tree/master/ArisenSwift/Crypto/Base58String.swift#L42-L59">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation4DataV10ArisenSwiftE16hexEncodedStringSSyF"></a>
+                    <a name="//apple_ref/swift/Method/hexEncodedString()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation4DataV10ArisenSwiftE16hexEncodedStringSSyF">hexEncodedString()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get a hex-encoded string representation of the data.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">hexEncodedString</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Base16 encoded string representation of the data.</p>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/ARISENIO/arisen-swift/tree/master/ArisenSwift/Extensions/DataExtensions.swift#L19-L24">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation4DataV10ArisenSwiftE3hexSSvp"></a>
+                    <a name="//apple_ref/swift/Property/hex" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation4DataV10ArisenSwiftE3hexSSvp">hex</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Return the data as a hex encoded string</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">hex</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/ARISENIO/arisen-swift/tree/master/ArisenSwift/Extensions/DataExtensions.swift#L27-L29">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation4DataV10ArisenSwiftE6base64ACSS_tKcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(base64:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation4DataV10ArisenSwiftE6base64ACSS_tKcfc">init(base64:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Init a <code>Data</code> object with a base64 string.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    If the string is not a valid base64 string.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">base64</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>base64</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The data encoded as a base64 string.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/ARISENIO/arisen-swift/tree/master/ArisenSwift/Extensions/DataExtensions.swift#L35-L43">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation4DataV10ArisenSwiftE3hexACSS_tKcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(hex:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation4DataV10ArisenSwiftE3hexACSS_tKcfc">init(hex:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Init a <code>Data</code> object with a hex string.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    If the string is not a valid hex string.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">hex</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>hex</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The data encoded as a hex string.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/ARISENIO/arisen-swift/tree/master/ArisenSwift/Extensions/DataExtensions.swift#L49-L54">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation4DataV10ArisenSwiftE9hexStringACSgSS_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(hexString:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation4DataV10ArisenSwiftE9hexStringACSgSS_tcfc">init(hexString:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes a data object from a Base16 encoded string.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">?(</span><span class="nv">hexString</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>hexString</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A Base16 encoded string.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/ARISENIO/arisen-swift/tree/master/ArisenSwift/Extensions/DataExtensions.swift#L59-L92">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation4DataV10ArisenSwiftE6sha256ACvp"></a>
+                    <a name="//apple_ref/swift/Property/sha256" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation4DataV10ArisenSwiftE6sha256ACvp">sha256</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the SHA256 hash of the data.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">sha256</span><span class="p">:</span> <span class="kt">Data</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/ARISENIO/arisen-swift/tree/master/ArisenSwift/Extensions/DataExtensions.swift#L95-L102">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation4DataV10ArisenSwiftE19base58EncodedStringSSvp"></a>
+                    <a name="//apple_ref/swift/Property/base58EncodedString" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation4DataV10ArisenSwiftE19base58EncodedStringSSvp">base58EncodedString</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the current Data as a base58 encoded String.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">base58EncodedString</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/ARISENIO/arisen-swift/tree/master/ArisenSwift/Extensions/DataExtensions.swift#L105-L107">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation4DataV10ArisenSwiftE6decode6base58ACSgSS_tFZ"></a>
+                    <a name="//apple_ref/swift/Method/decode(base58:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation4DataV10ArisenSwiftE6decode6base58ACSgSS_tFZ">decode(base58:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Decodes the given base58 String and returns it as Data, if valid.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">decode</span><span class="p">(</span><span class="nv">base58</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Data</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>base58</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A Base58 encoded string.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The base58 String as Data.</p>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/ARISENIO/arisen-swift/tree/master/ArisenSwift/Extensions/DataExtensions.swift#L113-L115">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation4DataV10ArisenSwiftE21toCompressedPublicKeyACSgvp"></a>
+                    <a name="//apple_ref/swift/Property/toCompressedPublicKey" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation4DataV10ArisenSwiftE21toCompressedPublicKeyACSgvp">toCompressedPublicKey</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Compresses a public key.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">toCompressedPublicKey</span><span class="p">:</span> <span class="kt">Data</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/ARISENIO/arisen-swift/tree/master/ArisenSwift/Extensions/ArisenKeySignatureExtensions.swift#L52-L61">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation4DataV10ArisenSwiftE02toC11R1PublicKeySSvp"></a>
+                    <a name="//apple_ref/swift/Property/toArisenR1PublicKey" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation4DataV10ArisenSwiftE02toC11R1PublicKeySSvp">toArisenR1PublicKey</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns an Arisen public key as a string formatted PUB_R1_xxxxxxxxxxxxxxxxxxx.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">toArisenR1PublicKey</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/ARISENIO/arisen-swift/tree/master/ArisenSwift/Extensions/ArisenKeySignatureExtensions.swift#L64-L68">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation4DataV10ArisenSwiftE02toC11K1PublicKeySSvp"></a>
+                    <a name="//apple_ref/swift/Property/toArisenK1PublicKey" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation4DataV10ArisenSwiftE02toC11K1PublicKeySSvp">toArisenK1PublicKey</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns an Arisen public key as a string formatted PUB_K1_xxxxxxxxxxxxxxxxxxx.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">toArisenK1PublicKey</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/ARISENIO/arisen-swift/tree/master/ArisenSwift/Extensions/ArisenKeySignatureExtensions.swift#L71-L75">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation4DataV10ArisenSwiftE02toC15LegacyPublicKeySSvp"></a>
+                    <a name="//apple_ref/swift/Property/toArisenLegacyPublicKey" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation4DataV10ArisenSwiftE02toC15LegacyPublicKeySSvp">toArisenLegacyPublicKey</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a legacy Arisen public key as a string formatted RIXxxxxxxxxxxxxxxxxxxx.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">toArisenLegacyPublicKey</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/ARISENIO/arisen-swift/tree/master/ArisenSwift/Extensions/ArisenKeySignatureExtensions.swift#L78-L81">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation4DataV10ArisenSwiftE02toC9PublicKey5curveS2S_tKF"></a>
+                    <a name="//apple_ref/swift/Method/toArisenPublicKey(curve:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation4DataV10ArisenSwiftE02toC9PublicKey5curveS2S_tKF">toArisenPublicKey(curve:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns an Arisen public key as a string formatted PUB_[curve]_xxxxxxxxxxxxxxxxxxx.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">toArisenPublicKey</span><span class="p">(</span><span class="nv">curve</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/-swift/tree/master/ArisenSwift/Extensions/ArisenKeySignatureExtensions.swift#L84-L92">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation4DataV10ArisenSwiftE02toC11R1SignatureSSvp"></a>
+                    <a name="//apple_ref/swift/Property/toArisenR1Signature" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation4DataV10ArisenSwiftE02toC11R1SignatureSSvp">toArisenR1Signature</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns an Arisen signature as a string formatted SIG_R1_xxxxxxxxxxxxxxxxxxx.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">toArisenR1Signature</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/ARISENIO/arisen-swift/tree/master/ArisenSwift/Extensions/ArisenKeySignatureExtensions.swift#L95-L99">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation4DataV10ArisenSwiftE02toC11K1SignatureSSvp"></a>
+                    <a name="//apple_ref/swift/Property/toArisenK1Signature" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation4DataV10ArisenSwiftE02toC11K1SignatureSSvp">toArisenK1Signature</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns an Arisen signature as a string formatted SIG_K1_xxxxxxxxxxxxxxxxxxx.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">toArisenK1Signature</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/ARISENIO/arisen-swift/tree/master/ArisenSwift/Extensions/ArisenKeySignatureExtensions.swift#L102-L106">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation4DataV10ArisenSwiftE02toC12R1PrivateKeySSvp"></a>
+                    <a name="//apple_ref/swift/Property/toArisenR1PrivateKey" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation4DataV10ArisenSwiftE02toC12R1PrivateKeySSvp">toArisenR1PrivateKey</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns an Arisen private key as a string formatted PVT_R1_xxxxxxxxxxxxxxxxxxx</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">toArisenR1PrivateKey</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/ARISENIO/arisen-swift/tree/master/ArisenSwift/Extensions/ArisenKeySignatureExtensions.swift#L109-L113">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation4DataV10ArisenSwiftE02toC12K1PrivateKeySSvp"></a>
+                    <a name="//apple_ref/swift/Property/toArisenK1PrivateKey" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation4DataV10ArisenSwiftE02toC12K1PrivateKeySSvp">toArisenK1PrivateKey</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns an Arisen private key as a string formatted PVT_K1_xxxxxxxxxxxxxxxxxxx</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">toArisenK1PrivateKey</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/ARISENIO/arisen-swift/tree/master/ArisenSwift/Extensions/ArisenKeySignatureExtensions.swift#L116-L118">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation4DataV10ArisenSwiftE16ArisenR1SignatureACSS_tKcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(ArisenR1Signature:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation4DataV10ArisenSwiftE16ArisenR1SignatureACSS_tKcfc">init(ArisenR1Signature:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Init data signature from Arisen R1 signature string.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">ArisenR1Signature</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/ARISENIO/arisen-swift/tree/master/ArisenSwift/Extensions/ArisenKeySignatureExtensions.swift#L121-L143">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation4DataV10ArisenSwiftE14ArisenSignatureACSS_tKcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(ArisenSignature:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation4DataV10ArisenSwiftE14ArisenSignatureACSS_tKcfc">init(ArisenSignature:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Init data signature from Arisen signature string.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">ArisenSignature</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/ARISENIO/arisen-swift/tree/master/ArisenSwift/Extensions/ArisenKeySignatureExtensions.swift#L146-L165">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation4DataV10ArisenSwiftE14ArisenPublicKeyACSS_tKcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(ArisenPublicKey:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation4DataV10ArisenSwiftE14ArisenPublicKeyACSS_tKcfc">init(ArisenPublicKey:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a Data object in compressed ANSI X9.63 format from an Arisen public key.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">ArisenPublicKey</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/ARISENIO/arisen-swift/tree/master/ArisenSwift/Extensions/ArisenKeySignatureExtensions.swift#L168-L194">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation4DataV10ArisenSwiftE15ArisenPrivateKeyACSS_tKcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(ArisenPrivateKey:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation4DataV10ArisenSwiftE15ArisenPrivateKeyACSS_tKcfc">init(ArisenPrivateKey:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a Data object from an Arisen private key.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">ArisenPrivateKey</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/ARISENIO/arisen-swift/tree/master/ArisenSwift/Extensions/ArisenKeySignatureExtensions.swift#L197-L241">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>Copyright (c) 2017-2019 block.one and its contributors.  All rights reserved.</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.11.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

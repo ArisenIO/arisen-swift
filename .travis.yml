@@ -1,6 +1,6 @@
 language: swift
-xcode_workspace: EosioSwift.xcworkspace
-xcode_scheme: EosioSwiftTests
+xcode_workspace: ArisenSwift.xcworkspace
+xcode_scheme: ArisenSwiftTests
 osx_image: xcode10.2
 xcode_destination: platform=iOS Simulator,OS=11.4,name=iPhone 5s
 before_install:

@@ -1,9 +1,9 @@
 platform :ios, '11.0'
 
-target 'EosioSwift' do
+target 'ArisenSwift' do
   use_frameworks!
 
-  target 'EosioSwiftTests' do
+  target 'ArisenSwiftTests' do
     inherit! :search_paths
     pod 'OHHTTPStubs/Swift'
     pod 'BigInt', '~> 5.0'

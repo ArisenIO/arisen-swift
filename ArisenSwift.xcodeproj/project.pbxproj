@@ -1,0 +1,907 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F9DCB7A22569A2600853105 /* ArisenRpcProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9DCB7922569A2600853105 /* ArisenRpcProviderTests.swift */; };
+		1FDD00402279F62000E59784 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDD003E2279F62000E59784 /* Queue.swift */; };
+		1FDD00412279F62000E59784 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDD003F2279F62000E59784 /* LinkedList.swift */; };
+		1FE626EE2261290B00FC720F /* RpcTestConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE626ED2261290B00FC720F /* RpcTestConstants.swift */; };
+		1FE626F22264BC3900FC720F /* RpcProviderExtensionEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE626F12264BC3900FC720F /* RpcProviderExtensionEndpointTests.swift */; };
+		284C5E682224558800795392 /* ArisenAbiProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C5E672224558800795392 /* ArisenAbiProviderTests.swift */; };
+		2856028F22182EFA00642377 /* ArisenTransactionAbis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2856028E22182EFA00642377 /* ArisenTransactionAbis.swift */; };
+		28A7A3B722236641002386D3 /* ArisenAbiProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A7A3B622236641002386D3 /* ArisenAbiProviderProtocol.swift */; };
+		28A7A3BA22236890002386D3 /* ArisenAbiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A7A3B922236890002386D3 /* ArisenAbiProvider.swift */; };
+		28DDAB08223598DA008FB1CC /* ArisenKeySignatureExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DDAB07223598DA008FB1CC /* ArisenKeySignatureExtensions.swift */; };
+		28DDAB0A2237030E008FB1CC /* ArisenKeySignatureExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DDAB092237030E008FB1CC /* ArisenKeySignatureExtensionTests.swift */; };
+		28FE03982209D44700CCC977 /* ArisenTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FE03972209D44700CCC977 /* ArisenTransaction.swift */; };
+		28FE039A2209D4C100CCC977 /* ArisenTransactionAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FE03992209D4C100CCC977 /* ArisenTransactionAction.swift */; };
+		3E298A4E226E0F2F00B964B7 /* ArisenRpcProviderEndpointsCallbacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E298A4D226E0F2F00B964B7 /* ArisenRpcProviderEndpointsCallbacks.swift */; };
+		3E298A50226E113700B964B7 /* ArisenRpcProviderEndpointsForProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E298A4F226E113700B964B7 /* ArisenRpcProviderEndpointsForProtocol.swift */; };
+		3EE762A22268C48D00D8DC33 /* ArisenRpcProviderEndpointsPromises.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE762A12268C48D00D8DC33 /* ArisenRpcProviderEndpointsPromises.swift */; };
+		3EE762A422690E9200D8DC33 /* RpcProviderEndpointPromiseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE762A322690E9200D8DC33 /* RpcProviderEndpointPromiseTests.swift */; };
+		4FD31C65A4889CF91BFCE984 /* Pods_ArisenSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E4478EE834B70DDF06A7FA /* Pods_ArisenSwift.framework */; };
+		5D8C430D235F986700F3A146 /* DictionaryExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8C430C235F986700F3A146 /* DictionaryExtensionTests.swift */; };
+		6B80D26921FA6DDF00716A7B /* ArisenSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B80D25F21FA6DDF00716A7B /* ArisenSwift.framework */; };
+		6B80D27021FA6DDF00716A7B /* ArisenSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B80D26221FA6DDF00716A7B /* ArisenSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F49E8CF225E6E6A00082631 /* RpcProviderRequestModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F49E8CE225E6E6A00082631 /* RpcProviderRequestModels.swift */; };
+		8F6B04B522287A5300215CD0 /* ArisenError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6B04B022287A5300215CD0 /* ArisenError.swift */; };
+		8F6B04B622287A5300215CD0 /* ArisenSwiftFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F6B04B122287A5300215CD0 /* ArisenSwiftFoundation.h */; };
+		8F6B04B722287A5300215CD0 /* ArisenResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6B04B222287A5300215CD0 /* ArisenResult.swift */; };
+		8F6B04B822287A5300215CD0 /* ArisenName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6B04B322287A5300215CD0 /* ArisenName.swift */; };
+		8F6B04B922287A5300215CD0 /* ZAssert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6B04B422287A5300215CD0 /* ZAssert.swift */; };
+		8F6B04C122287A9E00215CD0 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6B04BB22287A9E00215CD0 /* StringExtensions.swift */; };
+		8F6B04C222287A9E00215CD0 /* DataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6B04BC22287A9E00215CD0 /* DataExtensions.swift */; };
+		8F6B04C322287A9E00215CD0 /* EncodableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6B04BD22287A9E00215CD0 /* EncodableExtensions.swift */; };
+		8F6B04C422287A9E00215CD0 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6B04BE22287A9E00215CD0 /* DateExtensions.swift */; };
+		8F6B04C522287A9E00215CD0 /* DictionaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6B04BF22287A9E00215CD0 /* DictionaryExtensions.swift */; };
+		8F6B04C622287A9E00215CD0 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6B04C022287A9E00215CD0 /* ArrayExtensions.swift */; };
+		8F6B04CC22287B1D00215CD0 /* EncodableExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6B04C722287B1D00215CD0 /* EncodableExtensionTests.swift */; };
+		8F6B04CE22287B1D00215CD0 /* StringExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6B04C922287B1D00215CD0 /* StringExtensionsTests.swift */; };
+		8F6B04CF22287B1D00215CD0 /* DataExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6B04CA22287B1D00215CD0 /* DataExtensionsTests.swift */; };
+		8F6B04D022287B1D00215CD0 /* ArisenNameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6B04CB22287B1D00215CD0 /* ArisenNameTests.swift */; };
+		8F77127D2232FD6D004256D3 /* ArisenTransactionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F77127C2232FD6D004256D3 /* ArisenTransactionTests.swift */; };
+		8FC41FEF225561D3006A76FF /* ArisenRpcProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC41FEE225561D3006A76FF /* ArisenRpcProvider.swift */; };
+		8FD1C4C82257EADE005AE506 /* AllResponseProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD1C4C72257EADE005AE506 /* AllResponseProtocols.swift */; };
+		B4178067226E472E00084A6E /* DynamicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4178066226E472E00084A6E /* DynamicKey.swift */; };
+		B42C0EFB2268F86200E7A28F /* ResolverExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42C0EFA2268F86200E7A28F /* ResolverExtensions.swift */; };
+		B44461632267CE37002C77C9 /* ArisenTransactionPromises.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44461622267CE37002C77C9 /* ArisenTransactionPromises.swift */; };
+		B46535962305B33A001B0DBD /* ArisenInt64.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46535952305B33A001B0DBD /* ArisenInt64.swift */; };
+		B466F0962229DA870082DC4E /* ArisenSerializationProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B466F0952229DA870082DC4E /* ArisenSerializationProviderProtocol.swift */; };
+		B47513D6227A43B8006CF07A /* ArisenUInt64.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47513D5227A43B8006CF07A /* ArisenUInt64.swift */; };
+		B4892C6D221E0CAA0050FA72 /* RequestModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4892C6C221E0CAA0050FA72 /* RequestModels.swift */; };
+		B49EE519221CCA0900018D29 /* ArisenRpcProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49EE518221CCA0900018D29 /* ArisenRpcProviderProtocol.swift */; };
+		B4A80E29221F15F200C5134D /* RpcProviderResponseModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A80E28221F15F200C5134D /* RpcProviderResponseModels.swift */; };
+		B4B69EBF2204B65E009260A5 /* ArisenSignatureProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B69EBE2204B65E009260A5 /* ArisenSignatureProviderProtocol.swift */; };
+		B4E8F6BC2232020100FA7E63 /* RIPEMD160.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E8F6BB2232020100FA7E63 /* RIPEMD160.swift */; };
+		B4E8F6BE22320AC700FA7E63 /* Base58String.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E8F6BD22320AC700FA7E63 /* Base58String.swift */; };
+		B4E8F6C022320E3F00FA7E63 /* Base58Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E8F6BF22320E3F00FA7E63 /* Base58Tests.swift */; };
+		B4E8F6C222320EB700FA7E63 /* RIPEMD160Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E8F6C122320EB700FA7E63 /* RIPEMD160Tests.swift */; };
+		BB6F2CFC22652CEC002C4150 /* ArisenTransactionFactoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6F2CFB22652CEC002C4150 /* ArisenTransactionFactoryTest.swift */; };
+		BB6F2CFE22653012002C4150 /* ArisenTransactionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6F2CFD22653012002C4150 /* ArisenTransactionFactory.swift */; };
+		BBAC7BCE225266A40035CDBC /* DateExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAC7BCD225266A40035CDBC /* DateExtensionTests.swift */; };
+		BBCA8F422241331C00B02372 /* ArisenTransactionActionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCA8F412241331C00B02372 /* ArisenTransactionActionTests.swift */; };
+		D9EC085EBBCF1FFF1D2D012C /* Pods_ArisenSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5835070C5F7998E17BF06017 /* Pods_ArisenSwiftTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6B80D26A21FA6DDF00716A7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B80D25621FA6DDF00716A7B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B80D25E21FA6DDF00716A7B;
+			remoteInfo = ArisenSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1F9DCB7922569A2600853105 /* ArisenRpcProviderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArisenRpcProviderTests.swift; sourceTree = "<group>"; };
+		1FDD003E2279F62000E59784 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		1FDD003F2279F62000E59784 /* LinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
+		1FE626ED2261290B00FC720F /* RpcTestConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RpcTestConstants.swift; sourceTree = "<group>"; };
+		1FE626F12264BC3900FC720F /* RpcProviderExtensionEndpointTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RpcProviderExtensionEndpointTests.swift; sourceTree = "<group>"; };
+		284C5E672224558800795392 /* ArisenAbiProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArisenAbiProviderTests.swift; sourceTree = "<group>"; };
+		2856028E22182EFA00642377 /* ArisenTransactionAbis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArisenTransactionAbis.swift; sourceTree = "<group>"; };
+		28A7A3B622236641002386D3 /* ArisenAbiProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArisenAbiProviderProtocol.swift; sourceTree = "<group>"; };
+		28A7A3B922236890002386D3 /* ArisenAbiProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArisenAbiProvider.swift; sourceTree = "<group>"; };
+		28DDAB07223598DA008FB1CC /* ArisenKeySignatureExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArisenKeySignatureExtensions.swift; sourceTree = "<group>"; };
+		28DDAB092237030E008FB1CC /* ArisenKeySignatureExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArisenKeySignatureExtensionTests.swift; sourceTree = "<group>"; };
+		28FE03972209D44700CCC977 /* ArisenTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArisenTransaction.swift; sourceTree = "<group>"; };
+		28FE03992209D4C100CCC977 /* ArisenTransactionAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArisenTransactionAction.swift; sourceTree = "<group>"; };
+		2A3178BBCA00EA01A2CA0226 /* Pods-ArisenSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArisenSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-ArisenSwift/Pods-ArisenSwift.release.xcconfig"; sourceTree = "<group>"; };
+		353A658F3689D83286AB270D /* Pods-ArisenSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArisenSwiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ArisenSwiftTests/Pods-ArisenSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
+		3E298A4D226E0F2F00B964B7 /* ArisenRpcProviderEndpointsCallbacks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArisenRpcProviderEndpointsCallbacks.swift; sourceTree = "<group>"; };
+		3E298A4F226E113700B964B7 /* ArisenRpcProviderEndpointsForProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArisenRpcProviderEndpointsForProtocol.swift; sourceTree = "<group>"; };
+		3EE762A12268C48D00D8DC33 /* ArisenRpcProviderEndpointsPromises.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArisenRpcProviderEndpointsPromises.swift; sourceTree = "<group>"; };
+		3EE762A322690E9200D8DC33 /* RpcProviderEndpointPromiseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RpcProviderEndpointPromiseTests.swift; sourceTree = "<group>"; };
+		5835070C5F7998E17BF06017 /* Pods_ArisenSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArisenSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ACC322368A39C81F88A1553 /* Pods-ArisenSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArisenSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArisenSwift/Pods-ArisenSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		5D8C430C235F986700F3A146 /* DictionaryExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryExtensionTests.swift; sourceTree = "<group>"; };
+		6B80D25F21FA6DDF00716A7B /* ArisenSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ArisenSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B80D26221FA6DDF00716A7B /* ArisenSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArisenSwift.h; sourceTree = "<group>"; };
+		6B80D26321FA6DDF00716A7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B80D26821FA6DDF00716A7B /* ArisenSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArisenSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B80D26F21FA6DDF00716A7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F49E8CE225E6E6A00082631 /* RpcProviderRequestModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RpcProviderRequestModels.swift; sourceTree = "<group>"; };
+		8F6B04B022287A5300215CD0 /* ArisenError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArisenError.swift; sourceTree = "<group>"; };
+		8F6B04B122287A5300215CD0 /* ArisenSwiftFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArisenSwiftFoundation.h; sourceTree = "<group>"; };
+		8F6B04B222287A5300215CD0 /* ArisenResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArisenResult.swift; sourceTree = "<group>"; };
+		8F6B04B322287A5300215CD0 /* ArisenName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArisenName.swift; sourceTree = "<group>"; };
+		8F6B04B422287A5300215CD0 /* ZAssert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZAssert.swift; sourceTree = "<group>"; };
+		8F6B04BB22287A9E00215CD0 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		8F6B04BC22287A9E00215CD0 /* DataExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataExtensions.swift; sourceTree = "<group>"; };
+		8F6B04BD22287A9E00215CD0 /* EncodableExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncodableExtensions.swift; sourceTree = "<group>"; };
+		8F6B04BE22287A9E00215CD0 /* DateExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		8F6B04BF22287A9E00215CD0 /* DictionaryExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryExtensions.swift; sourceTree = "<group>"; };
+		8F6B04C022287A9E00215CD0 /* ArrayExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
+		8F6B04C722287B1D00215CD0 /* EncodableExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncodableExtensionTests.swift; sourceTree = "<group>"; };
+		8F6B04C922287B1D00215CD0 /* StringExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensionsTests.swift; sourceTree = "<group>"; };
+		8F6B04CA22287B1D00215CD0 /* DataExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataExtensionsTests.swift; sourceTree = "<group>"; };
+		8F6B04CB22287B1D00215CD0 /* ArisenNameTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArisenNameTests.swift; sourceTree = "<group>"; };
+		8F77127C2232FD6D004256D3 /* ArisenTransactionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArisenTransactionTests.swift; sourceTree = "<group>"; };
+		8FC41FEE225561D3006A76FF /* ArisenRpcProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArisenRpcProvider.swift; sourceTree = "<group>"; };
+		8FD1C4C72257EADE005AE506 /* AllResponseProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AllResponseProtocols.swift; path = RpcResponseProtocols/AllResponseProtocols.swift; sourceTree = "<group>"; };
+		B4178066226E472E00084A6E /* DynamicKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicKey.swift; sourceTree = "<group>"; };
+		B42C0EFA2268F86200E7A28F /* ResolverExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResolverExtensions.swift; sourceTree = "<group>"; };
+		B44461622267CE37002C77C9 /* ArisenTransactionPromises.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArisenTransactionPromises.swift; sourceTree = "<group>"; };
+		B46535952305B33A001B0DBD /* ArisenInt64.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArisenInt64.swift; sourceTree = "<group>"; };
+		B466F0952229DA870082DC4E /* ArisenSerializationProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArisenSerializationProviderProtocol.swift; sourceTree = "<group>"; };
+		B47513D5227A43B8006CF07A /* ArisenUInt64.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArisenUInt64.swift; sourceTree = "<group>"; };
+		B4892C6C221E0CAA0050FA72 /* RequestModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestModels.swift; sourceTree = "<group>"; };
+		B49EE518221CCA0900018D29 /* ArisenRpcProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArisenRpcProviderProtocol.swift; sourceTree = "<group>"; };
+		B4A80E28221F15F200C5134D /* RpcProviderResponseModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RpcProviderResponseModels.swift; sourceTree = "<group>"; };
+		B4B69EBE2204B65E009260A5 /* ArisenSignatureProviderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArisenSignatureProviderProtocol.swift; sourceTree = "<group>"; };
+		B4E8F6BB2232020100FA7E63 /* RIPEMD160.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RIPEMD160.swift; sourceTree = "<group>"; };
+		B4E8F6BD22320AC700FA7E63 /* Base58String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base58String.swift; sourceTree = "<group>"; };
+		B4E8F6BF22320E3F00FA7E63 /* Base58Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base58Tests.swift; sourceTree = "<group>"; };
+		B4E8F6C122320EB700FA7E63 /* RIPEMD160Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RIPEMD160Tests.swift; sourceTree = "<group>"; };
+		BB6F2CFB22652CEC002C4150 /* ArisenTransactionFactoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArisenTransactionFactoryTest.swift; sourceTree = "<group>"; };
+		BB6F2CFD22653012002C4150 /* ArisenTransactionFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArisenTransactionFactory.swift; sourceTree = "<group>"; };
+		BBAC7BCD225266A40035CDBC /* DateExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensionTests.swift; sourceTree = "<group>"; };
+		BBCA8F412241331C00B02372 /* ArisenTransactionActionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArisenTransactionActionTests.swift; sourceTree = "<group>"; };
+		D3E4478EE834B70DDF06A7FA /* Pods_ArisenSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArisenSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7404A6D5764E579E57E1897 /* Pods-ArisenSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArisenSwiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArisenSwiftTests/Pods-ArisenSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6B80D25C21FA6DDF00716A7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FD31C65A4889CF91BFCE984 /* Pods_ArisenSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B80D26521FA6DDF00716A7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B80D26921FA6DDF00716A7B /* ArisenSwift.framework in Frameworks */,
+				D9EC085EBBCF1FFF1D2D012C /* Pods_ArisenSwiftTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F0355C6224485A400AC2AB3 /* ArisenRpcProvider */ = {
+			isa = PBXGroup;
+			children = (
+				3E298A4C226E0EF400B964B7 /* Endpoints */,
+				8F49E8D0225E6E7A00082631 /* Models */,
+				8FC41FEE225561D3006A76FF /* ArisenRpcProvider.swift */,
+			);
+			path = ArisenRpcProvider;
+			sourceTree = "<group>";
+		};
+		2848B2BF0EEBEBCC3A480AC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3E4478EE834B70DDF06A7FA /* Pods_ArisenSwift.framework */,
+				5835070C5F7998E17BF06017 /* Pods_ArisenSwiftTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		28560292221F3E0300642377 /* ArisenTransaction */ = {
+			isa = PBXGroup;
+			children = (
+				28FE03972209D44700CCC977 /* ArisenTransaction.swift */,
+				2856028E22182EFA00642377 /* ArisenTransactionAbis.swift */,
+				28FE03992209D4C100CCC977 /* ArisenTransactionAction.swift */,
+				BB6F2CFD22653012002C4150 /* ArisenTransactionFactory.swift */,
+				B44461622267CE37002C77C9 /* ArisenTransactionPromises.swift */,
+			);
+			path = ArisenTransaction;
+			sourceTree = "<group>";
+		};
+		28A7A3B822236650002386D3 /* ArisenAbiProviderProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				28A7A3B622236641002386D3 /* ArisenAbiProviderProtocol.swift */,
+				28A7A3B922236890002386D3 /* ArisenAbiProvider.swift */,
+			);
+			path = ArisenAbiProviderProtocol;
+			sourceTree = "<group>";
+		};
+		3E298A4C226E0EF400B964B7 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				3EE762A12268C48D00D8DC33 /* ArisenRpcProviderEndpointsPromises.swift */,
+				3E298A4D226E0F2F00B964B7 /* ArisenRpcProviderEndpointsCallbacks.swift */,
+				3E298A4F226E113700B964B7 /* ArisenRpcProviderEndpointsForProtocol.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		6B80D25521FA6DDF00716A7B = {
+			isa = PBXGroup;
+			children = (
+				6B80D26121FA6DDF00716A7B /* ArisenSwift */,
+				6B80D26C21FA6DDF00716A7B /* ArisenSwiftTests */,
+				6B80D26021FA6DDF00716A7B /* Products */,
+				BEA6F98975661FC45F4B9430 /* Pods */,
+				2848B2BF0EEBEBCC3A480AC7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6B80D26021FA6DDF00716A7B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6B80D25F21FA6DDF00716A7B /* ArisenSwift.framework */,
+				6B80D26821FA6DDF00716A7B /* ArisenSwiftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B80D26121FA6DDF00716A7B /* ArisenSwift */ = {
+			isa = PBXGroup;
+			children = (
+				B4E8F6BA2232003800FA7E63 /* Crypto */,
+				8F6B04BA22287A7B00215CD0 /* Extensions */,
+				8F6B04AF222879EC00215CD0 /* Foundation */,
+				28A7A3B822236650002386D3 /* ArisenAbiProviderProtocol */,
+				1F0355C6224485A400AC2AB3 /* ArisenRpcProvider */,
+				B49EE50D221CC63700018D29 /* ArisenRpcProviderProtocol */,
+				B466F0942229D99B0082DC4E /* ArisenSerializationProviderProtocol */,
+				B4B69EBD2204B631009260A5 /* ArisenSignatureProviderProtocol */,
+				28560292221F3E0300642377 /* ArisenTransaction */,
+				6B80D26221FA6DDF00716A7B /* ArisenSwift.h */,
+				6B80D26321FA6DDF00716A7B /* Info.plist */,
+			);
+			path = ArisenSwift;
+			sourceTree = "<group>";
+		};
+		6B80D26C21FA6DDF00716A7B /* ArisenSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				8F6B04CA22287B1D00215CD0 /* DataExtensionsTests.swift */,
+				5D8C430C235F986700F3A146 /* DictionaryExtensionTests.swift */,
+				8F6B04C722287B1D00215CD0 /* EncodableExtensionTests.swift */,
+				8F6B04CB22287B1D00215CD0 /* ArisenNameTests.swift */,
+				8F6B04C922287B1D00215CD0 /* StringExtensionsTests.swift */,
+				284C5E672224558800795392 /* ArisenAbiProviderTests.swift */,
+				6B80D26F21FA6DDF00716A7B /* Info.plist */,
+				B4E8F6BF22320E3F00FA7E63 /* Base58Tests.swift */,
+				B4E8F6C122320EB700FA7E63 /* RIPEMD160Tests.swift */,
+				8F77127C2232FD6D004256D3 /* ArisenTransactionTests.swift */,
+				BBCA8F412241331C00B02372 /* ArisenTransactionActionTests.swift */,
+				28DDAB092237030E008FB1CC /* ArisenKeySignatureExtensionTests.swift */,
+				BB6F2CFB22652CEC002C4150 /* ArisenTransactionFactoryTest.swift */,
+				BBAC7BCD225266A40035CDBC /* DateExtensionTests.swift */,
+				1F9DCB7922569A2600853105 /* ArisenRpcProviderTests.swift */,
+				1FE626ED2261290B00FC720F /* RpcTestConstants.swift */,
+				1FE626F12264BC3900FC720F /* RpcProviderExtensionEndpointTests.swift */,
+				3EE762A322690E9200D8DC33 /* RpcProviderEndpointPromiseTests.swift */,
+			);
+			path = ArisenSwiftTests;
+			sourceTree = "<group>";
+		};
+		8F039890226116B400E8C7CB /* RequestModels */ = {
+			isa = PBXGroup;
+			children = (
+				B4892C6C221E0CAA0050FA72 /* RequestModels.swift */,
+			);
+			path = RequestModels;
+			sourceTree = "<group>";
+		};
+		8F49E8D0225E6E7A00082631 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B4A80E28221F15F200C5134D /* RpcProviderResponseModels.swift */,
+				8F49E8CE225E6E6A00082631 /* RpcProviderRequestModels.swift */,
+				B47513D5227A43B8006CF07A /* ArisenUInt64.swift */,
+				B46535952305B33A001B0DBD /* ArisenInt64.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8F6B04AF222879EC00215CD0 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				8F6B04B022287A5300215CD0 /* ArisenError.swift */,
+				8F6B04B322287A5300215CD0 /* ArisenName.swift */,
+				8F6B04B222287A5300215CD0 /* ArisenResult.swift */,
+				8F6B04B122287A5300215CD0 /* ArisenSwiftFoundation.h */,
+				8F6B04B422287A5300215CD0 /* ZAssert.swift */,
+				B4178066226E472E00084A6E /* DynamicKey.swift */,
+				1FDD003F2279F62000E59784 /* LinkedList.swift */,
+				1FDD003E2279F62000E59784 /* Queue.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		8F6B04BA22287A7B00215CD0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8F6B04C022287A9E00215CD0 /* ArrayExtensions.swift */,
+				8F6B04BC22287A9E00215CD0 /* DataExtensions.swift */,
+				8F6B04BE22287A9E00215CD0 /* DateExtensions.swift */,
+				8F6B04BF22287A9E00215CD0 /* DictionaryExtensions.swift */,
+				8F6B04BD22287A9E00215CD0 /* EncodableExtensions.swift */,
+				8F6B04BB22287A9E00215CD0 /* StringExtensions.swift */,
+				28DDAB07223598DA008FB1CC /* ArisenKeySignatureExtensions.swift */,
+				B42C0EFA2268F86200E7A28F /* ResolverExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B466F0942229D99B0082DC4E /* ArisenSerializationProviderProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				B466F0952229DA870082DC4E /* ArisenSerializationProviderProtocol.swift */,
+			);
+			path = ArisenSerializationProviderProtocol;
+			sourceTree = "<group>";
+		};
+		B49EE50D221CC63700018D29 /* ArisenRpcProviderProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				8F039890226116B400E8C7CB /* RequestModels */,
+				8FD1C4C72257EADE005AE506 /* AllResponseProtocols.swift */,
+				B49EE518221CCA0900018D29 /* ArisenRpcProviderProtocol.swift */,
+			);
+			path = ArisenRpcProviderProtocol;
+			sourceTree = "<group>";
+		};
+		B4B69EBD2204B631009260A5 /* ArisenSignatureProviderProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				B4B69EBE2204B65E009260A5 /* ArisenSignatureProviderProtocol.swift */,
+			);
+			path = ArisenSignatureProviderProtocol;
+			sourceTree = "<group>";
+		};
+		B4E8F6BA2232003800FA7E63 /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				B4E8F6BB2232020100FA7E63 /* RIPEMD160.swift */,
+				B4E8F6BD22320AC700FA7E63 /* Base58String.swift */,
+			);
+			path = Crypto;
+			sourceTree = "<group>";
+		};
+		BEA6F98975661FC45F4B9430 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5ACC322368A39C81F88A1553 /* Pods-ArisenSwift.debug.xcconfig */,
+				2A3178BBCA00EA01A2CA0226 /* Pods-ArisenSwift.release.xcconfig */,
+				F7404A6D5764E579E57E1897 /* Pods-ArisenSwiftTests.debug.xcconfig */,
+				353A658F3689D83286AB270D /* Pods-ArisenSwiftTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6B80D25A21FA6DDF00716A7B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B80D27021FA6DDF00716A7B /* ArisenSwift.h in Headers */,
+				8F6B04B622287A5300215CD0 /* ArisenSwiftFoundation.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6B80D25E21FA6DDF00716A7B /* ArisenSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B80D27321FA6DDF00716A7B /* Build configuration list for PBXNativeTarget "ArisenSwift" */;
+			buildPhases = (
+				5CF047D0946F3A1EC50E048E /* [CP] Check Pods Manifest.lock */,
+				6B80D25A21FA6DDF00716A7B /* Headers */,
+				6B80D25B21FA6DDF00716A7B /* Sources */,
+				6B80D25C21FA6DDF00716A7B /* Frameworks */,
+				6B80D25D21FA6DDF00716A7B /* Resources */,
+				3EB51F98225B9D1400585718 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArisenSwift;
+			productName = ArisenSwift;
+			productReference = 6B80D25F21FA6DDF00716A7B /* ArisenSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6B80D26721FA6DDF00716A7B /* ArisenSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B80D27621FA6DDF00716A7B /* Build configuration list for PBXNativeTarget "ArisenSwiftTests" */;
+			buildPhases = (
+				EF5CE5D124C47F4DE42563AB /* [CP] Check Pods Manifest.lock */,
+				6B80D26421FA6DDF00716A7B /* Sources */,
+				6B80D26521FA6DDF00716A7B /* Frameworks */,
+				6B80D26621FA6DDF00716A7B /* Resources */,
+				FD2327D9FA1A30CCA7634844 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B80D26B21FA6DDF00716A7B /* PBXTargetDependency */,
+			);
+			name = ArisenSwiftTests;
+			productName = ArisenSwiftTests;
+			productReference = 6B80D26821FA6DDF00716A7B /* ArisenSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6B80D25621FA6DDF00716A7B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = block.one;
+				TargetAttributes = {
+					6B80D25E21FA6DDF00716A7B = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1110;
+					};
+					6B80D26721FA6DDF00716A7B = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1110;
+					};
+				};
+			};
+			buildConfigurationList = 6B80D25921FA6DDF00716A7B /* Build configuration list for PBXProject "ArisenSwift" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6B80D25521FA6DDF00716A7B;
+			productRefGroup = 6B80D26021FA6DDF00716A7B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6B80D25E21FA6DDF00716A7B /* ArisenSwift */,
+				6B80D26721FA6DDF00716A7B /* ArisenSwiftTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6B80D25D21FA6DDF00716A7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B80D26621FA6DDF00716A7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3EB51F98225B9D1400585718 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		5CF047D0946F3A1EC50E048E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ArisenSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF5CE5D124C47F4DE42563AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ArisenSwiftTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD2327D9FA1A30CCA7634844 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ArisenSwiftTests/Pods-ArisenSwiftTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ArisenSwiftTests/Pods-ArisenSwiftTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ArisenSwiftTests/Pods-ArisenSwiftTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6B80D25B21FA6DDF00716A7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F6B04C322287A9E00215CD0 /* EncodableExtensions.swift in Sources */,
+				B47513D6227A43B8006CF07A /* ArisenUInt64.swift in Sources */,
+				8F6B04C222287A9E00215CD0 /* DataExtensions.swift in Sources */,
+				8F6B04B522287A5300215CD0 /* ArisenError.swift in Sources */,
+				28A7A3B722236641002386D3 /* ArisenAbiProviderProtocol.swift in Sources */,
+				B44461632267CE37002C77C9 /* ArisenTransactionPromises.swift in Sources */,
+				3EE762A22268C48D00D8DC33 /* ArisenRpcProviderEndpointsPromises.swift in Sources */,
+				3E298A4E226E0F2F00B964B7 /* ArisenRpcProviderEndpointsCallbacks.swift in Sources */,
+				28DDAB08223598DA008FB1CC /* ArisenKeySignatureExtensions.swift in Sources */,
+				8F6B04C422287A9E00215CD0 /* DateExtensions.swift in Sources */,
+				8F6B04C122287A9E00215CD0 /* StringExtensions.swift in Sources */,
+				8F49E8CF225E6E6A00082631 /* RpcProviderRequestModels.swift in Sources */,
+				2856028F22182EFA00642377 /* ArisenTransactionAbis.swift in Sources */,
+				B4E8F6BC2232020100FA7E63 /* RIPEMD160.swift in Sources */,
+				B46535962305B33A001B0DBD /* ArisenInt64.swift in Sources */,
+				8F6B04B822287A5300215CD0 /* ArisenName.swift in Sources */,
+				B466F0962229DA870082DC4E /* ArisenSerializationProviderProtocol.swift in Sources */,
+				8F6B04B922287A5300215CD0 /* ZAssert.swift in Sources */,
+				B4178067226E472E00084A6E /* DynamicKey.swift in Sources */,
+				8F6B04C622287A9E00215CD0 /* ArrayExtensions.swift in Sources */,
+				28FE03982209D44700CCC977 /* ArisenTransaction.swift in Sources */,
+				3E298A50226E113700B964B7 /* ArisenRpcProviderEndpointsForProtocol.swift in Sources */,
+				B4E8F6BE22320AC700FA7E63 /* Base58String.swift in Sources */,
+				8FC41FEF225561D3006A76FF /* ArisenRpcProvider.swift in Sources */,
+				B4A80E29221F15F200C5134D /* RpcProviderResponseModels.swift in Sources */,
+				8F6B04B722287A5300215CD0 /* ArisenResult.swift in Sources */,
+				BB6F2CFE22653012002C4150 /* ArisenTransactionFactory.swift in Sources */,
+				8FD1C4C82257EADE005AE506 /* AllResponseProtocols.swift in Sources */,
+				B4892C6D221E0CAA0050FA72 /* RequestModels.swift in Sources */,
+				1FDD00412279F62000E59784 /* LinkedList.swift in Sources */,
+				28FE039A2209D4C100CCC977 /* ArisenTransactionAction.swift in Sources */,
+				B42C0EFB2268F86200E7A28F /* ResolverExtensions.swift in Sources */,
+				B49EE519221CCA0900018D29 /* ArisenRpcProviderProtocol.swift in Sources */,
+				8F6B04C522287A9E00215CD0 /* DictionaryExtensions.swift in Sources */,
+				1FDD00402279F62000E59784 /* Queue.swift in Sources */,
+				28A7A3BA22236890002386D3 /* ArisenAbiProvider.swift in Sources */,
+				B4B69EBF2204B65E009260A5 /* ArisenSignatureProviderProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B80D26421FA6DDF00716A7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F6B04CE22287B1D00215CD0 /* StringExtensionsTests.swift in Sources */,
+				BBAC7BCE225266A40035CDBC /* DateExtensionTests.swift in Sources */,
+				8F77127D2232FD6D004256D3 /* ArisenTransactionTests.swift in Sources */,
+				5D8C430D235F986700F3A146 /* DictionaryExtensionTests.swift in Sources */,
+				1F9DCB7A22569A2600853105 /* ArisenRpcProviderTests.swift in Sources */,
+				B4E8F6C222320EB700FA7E63 /* RIPEMD160Tests.swift in Sources */,
+				8F6B04CF22287B1D00215CD0 /* DataExtensionsTests.swift in Sources */,
+				1FE626F22264BC3900FC720F /* RpcProviderExtensionEndpointTests.swift in Sources */,
+				8F6B04D022287B1D00215CD0 /* ArisenNameTests.swift in Sources */,
+				3EE762A422690E9200D8DC33 /* RpcProviderEndpointPromiseTests.swift in Sources */,
+				284C5E682224558800795392 /* ArisenAbiProviderTests.swift in Sources */,
+				8F6B04CC22287B1D00215CD0 /* EncodableExtensionTests.swift in Sources */,
+				BB6F2CFC22652CEC002C4150 /* ArisenTransactionFactoryTest.swift in Sources */,
+				28DDAB0A2237030E008FB1CC /* ArisenKeySignatureExtensionTests.swift in Sources */,
+				BBCA8F422241331C00B02372 /* ArisenTransactionActionTests.swift in Sources */,
+				B4E8F6C022320E3F00FA7E63 /* Base58Tests.swift in Sources */,
+				1FE626EE2261290B00FC720F /* RpcTestConstants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6B80D26B21FA6DDF00716A7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B80D25E21FA6DDF00716A7B /* ArisenSwift */;
+			targetProxy = 6B80D26A21FA6DDF00716A7B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6B80D27121FA6DDF00716A7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6B80D27221FA6DDF00716A7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6B80D27421FA6DDF00716A7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5ACC322368A39C81F88A1553 /* Pods-ArisenSwift.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9574LUMBYJ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ArisenSwift/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.4.0;
+				PRODUCT_BUNDLE_IDENTIFIER = one.block.ArisenSwift;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6B80D27521FA6DDF00716A7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A3178BBCA00EA01A2CA0226 /* Pods-ArisenSwift.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9574LUMBYJ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ArisenSwift/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.4.0;
+				PRODUCT_BUNDLE_IDENTIFIER = one.block.ArisenSwift;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6B80D27721FA6DDF00716A7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7404A6D5764E579E57E1897 /* Pods-ArisenSwiftTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9574LUMBYJ;
+				INFOPLIST_FILE = ArisenSwiftTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = one.block.ArisenSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6B80D27821FA6DDF00716A7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 353A658F3689D83286AB270D /* Pods-ArisenSwiftTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9574LUMBYJ;
+				INFOPLIST_FILE = ArisenSwiftTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = one.block.ArisenSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6B80D25921FA6DDF00716A7B /* Build configuration list for PBXProject "ArisenSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B80D27121FA6DDF00716A7B /* Debug */,
+				6B80D27221FA6DDF00716A7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B80D27321FA6DDF00716A7B /* Build configuration list for PBXNativeTarget "ArisenSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B80D27421FA6DDF00716A7B /* Debug */,
+				6B80D27521FA6DDF00716A7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B80D27621FA6DDF00716A7B /* Build configuration list for PBXNativeTarget "ArisenSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B80D27721FA6DDF00716A7B /* Debug */,
+				6B80D27821FA6DDF00716A7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6B80D25621FA6DDF00716A7B /* Project object */;
+}

@@ -3,7 +3,7 @@ disabled_rules:
   - file_length
 excluded:
   - Pods
-  - EosioSwift/Crypto
+  - ArisenSwift/Crypto
 line_length: 200
 identifier_name:
   min-length: 4
