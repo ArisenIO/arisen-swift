@@ -477,7 +477,7 @@ class RpcProviderExtensionEndpointTests: XCTestCase {
                 XCTAssert(arisenRpcTableRowsResponse.rows.count == 1)
                 if let row = arisenRpcTableRowsResponse.rows[0] as? [String: Any],
                     let balance = row["balance"] as? String {
-                    XCTAssert(balance == "986420.1921 RSN")
+                    XCTAssert(balance == "986420.1921 RIX")
                 } else {
                     XCTFail("Cannot get returned table row or balance string.")
                 }

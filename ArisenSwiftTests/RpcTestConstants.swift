@@ -380,7 +380,7 @@ public class RpcTestConstants {
                     "data": {
                         "from": "cryptkeeper",
                         "to": "brandon",
-                        "quantity": "42.0000 RSN",
+                        "quantity": "42.0000 RIX",
                         "memo": "the grasshopper lies heavy"
                     },
                     "hex_data": "00aeaa4ac15cfd4500000060d234cd3da06806000000000004454f53000000001a746865206772617373686f70706572206c696573206865617679"
@@ -423,7 +423,7 @@ public class RpcTestConstants {
                             "data": {
                                 "from": "cryptkeeper",
                                 "to": "brandon",
-                                "quantity": "42.0000 RSN",
+                                "quantity": "42.0000 RIX",
                                 "memo": "the grasshopper lies heavy"
                             },
                             "hex_data": "00aeaa4ac15cfd4500000060d234cd3da06806000000000004454f53000000001a746865206772617373686f70706572206c696573206865617679"
@@ -467,7 +467,7 @@ public class RpcTestConstants {
                             "data": {
                                 "from": "cryptkeeper",
                                 "to": "brandon",
-                                "quantity": "42.0000 RSN",
+                                "quantity": "42.0000 RIX",
                                 "memo": "the grasshopper lies heavy"
                             },
                             "hex_data": "00aeaa4ac15cfd4500000060d234cd3da06806000000000004454f53000000001a746865206772617373686f70706572206c696573206865617679"
