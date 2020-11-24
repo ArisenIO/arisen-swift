@@ -118,7 +118,7 @@ firstly {
 Utilities for key generation and management and other signing functionality can be found in the Arisen SDK for Swift: Vault library.
 
 ## iOS Example App
-If you'd like to see Arisen's Swift SDK in action, check out our open source [iOS Example App](https://github.com/arisenio/ios-example-app), which is a working application for fetching an Arisen account's RSN balance and pushes a transfer action.
+If you'd like to see Arisen's Swift SDK in action, check out our open source [iOS Example App](https://github.com/arisenio/arisen-swift-ios-example-app), which is a working application for fetching an Arisen account's RSN balance and pushes a transfer action.
 
 ## Documentation
 Please refer to the official documentation for Arisen's Swift SDK, [here](https://swift.arisen.network) or by cloning this repository and opening the ```docs/index.html``` file in our browser. All of this documentation is automatically generated.
@@ -127,35 +127,35 @@ Please refer to the official documentation for Arisen's Swift SDK, [here](https:
 The core Arisen Swift SDK library uses a provider-protocol-driven architecture to provide maximum flexibility in a variety of environments and use cases. ```ArisenTransaction``` leverages those providers to prepare and process transactions. Arisen's Swift SDK exposes four protocols. Developers make the ultimate choice on which conforming implementations to use. 
 
 ### Signature Provider Protocol 
-The Signature Provider abstraction is arguably the most useful of all the providers. It is responsible for a) finding out what keys are available for signing and b) requesting and obtaining transaction signatures with a subset of the available keys.  By simply switching out the signature provider on a transaction, signature requests can be routed any number of ways. Need a signature from keys in a platform's Keychain or Secure Enclave? Configure ```ArisenTransaction``` with the Arisen's Swift SDK Vault Signature Provider. Need signatures from a wallet on a user's device? A signature provider can do that too. Arisen's Swift SDK ***does not include***  a signature provider implementation; one must be installed separately. All signature providers must conform to the ```ArisenSignatureProviderProtocol```.
+The Signature Provider abstraction is arguably the most useful of all the providers. It is responsible for a) finding out what keys are available for signing and b) requesting and obtaining transaction signatures with a subset of the available keys.  By simply switching out the signature provider on a transaction, signature requests can be routed any number of ways. Need a signature from keys in a platform's Keychain or Secure Enclave? Configure ```ArisenTransaction``` with the Arisen's Swift SDK Vault Signature Provider (https://github.com/arisenio/arisen-swift-vault) . Need signatures from a wallet on a user's device? A signature provider can do that too. Arisen's Swift SDK ***does not include***  a signature provider implementation; one must be installed separately. All signature providers must conform to the ```ArisenSignatureProviderProtocol```.
 
 Please consider one of the following Signature providers:
 
 - ```Vault Signature Provider``` - Signature provider implementation for signing transactions using keys stored in the Keychain or the device's Secure Enclave.
-- ```Softkey Signature Provider``` - Example signature provider for signing transactions using K1 keys in memory. ***This signature provider stores keys in memory and is therefore not secure. It should only be used for development purposes. In production, we strongly recommend using a signature provider that interfaces with a secure vault, authenticator or wallet.***
-- ```Arisen iOS Authenticator``` - Native iOS Apps using the signature provider are able to integrate with the [Arisen Reference iOS Authenticator App](https://github.com/arisenio/arisen-reference-ios-authenticator-app), allowing their users to sign in and approve transactions via the authenticator application.
+- ```Softkey Signature Provider``` - Example signature provider for signing transactions using K1 keys in memory (https://github.com/arisenio/arisen-swift-softkey-signature-provider). ***This signature provider stores keys in memory and is therefore not secure. It should only be used for development purposes. In production, we strongly recommend using a signature provider that interfaces with a secure vault, authenticator or wallet.***
+- ```PeepsID iOS Authenticator``` - Native iOS Apps using the signature provider are able to integrate with the [PeepsID iOS Authenticator App](https://github.com/peepsx/peepsid-ios), allowing their users to sign in and approve transactions via the authenticator application.
 
 ### RPC Provider Protocol
 The RPC Provider is responsible for all RPC calls to aOS (ArisenOS), as well as general network handling (Reachability, retry logic , etc.). While Arisen's Swift SDK includes an RPC Provider Implementation, it must still be set explicitly when creating an ```ArisenTransaction```, as it must be instantiated with an endpoint. (The default implementation suffices for most use cases.)
 
 Please consider the following RPC providers:
-- ```ArisenRpcSignatureProtocol``` - All RPC providers must conform to this protocol.
-- ```ArisenRpcProvider``` - Default Implementation - Default RPC provider implementation included in Arisen's Swift SDK.
-- ```[aOS RPC Reference Documentation](https://developers.arisen.network)``` - aOS RPC Reference.
+- ```ArisenRpcSignatureProtocol``` - All RPC providers must conform to this protocol (https://swift.arisen.network/Protocols/ArisenSignatureProviderProtocol.html).
+- ```ArisenRpcProvider``` - Default Implementation - Default RPC provider implementation included in Arisen's Swift SDK (https://swift.arisen.network/Classes/ArisenRpcProvider.html).
+- ```[aOS RPC Reference Documentation](https://docs.arisen.network/docs/aos-rpc-api-reference)``` - aOS RPC Reference.
 
 ### Serialization Provider Protocol
 The Serialization Provider is responsible for ABI-driven transaction and action serialization and deserialization between JSON and binary data representations. These implementations often contain platform-sensitive C++ code and larger dependencies. For those reasons, Arisen's Swift SDK ***does not include*** a serialization provider implementation; one must be installed separately.
 
 Please consider the following Serialization providers:
-- ```ArisenSerializationProviderProtocol``` - All serialization providers must conform to this protocol.
-- ```ABIRSN Serialization Provider Implementation``` - Serialization/deserialization using ABIRSN. Currently supports iOS 12+.
+- ```ArisenSerializationProviderProtocol``` - All serialization providers must conform to this protocol (https://swift.arisen.network/Protocols/ArisenSerializationProviderProtocol.html).
+- ```ABIRSN Serialization Provider Implementation``` - Serialization/deserialization using ABIRSN. Currently supports iOS 12+ (https://swift.arisen.network/Protocols/ArisenAbiProviderProtocol.html).
 
 ### ABI Provider Protocol 
 The ABI Provider is responsible for fetching an caching ABIs for use during serialization and deserialization. If none is explicitly set on the ```ArisenTransaction```, the default ```ArisenAbiProvider``` will be used. (The default implementation suffices for most use cases.).
 
 Please consider the following ABI providers"
-- ```ArisenAbiProviderProtocol``` - All ABI providers must conform to this protocol.
-- ```ArisenAbiProvider``` - Default implementation - Default ABI provider implementation in Arisen's Swift SDK.
+- ```ArisenAbiProviderProtocol``` - All ABI providers must conform to this protocol (https://swift.arisen.network/Protocols/ArisenAbiProviderProtocol.html).
+- ```ArisenAbiProvider``` - Default implementation - Default ABI provider implementation in Arisen's Swift SDK (https://swift.arisen.network/Classes/ArisenAbiProvider.html).
 
 ## Using The Default RPC Provider
 Arisen's Swift SDK includes a default RPC Provider implementation (```ArisenRpcProvider```) for communicating with Arisen nodes using the [Arisen RPC API](https://api.arisen.network). Alternate RPC providers can be used assuming they conform to the minimal ```ArisenRpcProviderProtocol```. The core Arisen Swift SDK library depends only on the five RPC endpoints set forth in that Protocol. Other endpoints, however, are exposed in the default ```ArisenRpcProvider```.
@@ -185,9 +185,9 @@ If you're interested in contributing to Arisen's Swift SDK, here are some [Contr
 
 (C) 2019 Block.One
 (C) 2020 Arisen Foundation
-(C) 2020 Satoshi Labs
+(C) 2020 PeepsLabs
 
 The original Swift SDK for Arisen, was developed by ```blockone-devops``` and has since been adopted by the Arisen Foundation, as well as the Arisen community. Arisen Foundation has no affiliation, whatsoever to Block.One.
 
 ## Legal
-See LICENSE for copyright and license terms. The Arisen Foundation and Satoshi Labs makes their contribution on a voluntary basis, as a member of the Arisen community and is not responsible for ensuring the overall performance of the software or any related applications. We make no representation, warranty, guarantee or undertaking in respect of the software or any related documentation, whether expressed or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. In no even shall we be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or documentation or the use or other dealings in the software or documentation. Any test results or performance figures are indicative and will not reflect performance under all conditions. Any reference to any third part or third-party product, service or other resource is not an endorsement or recommendation by Arisen Foundation or Satoshi Las. We are not responsible, and disclaim any and all responsibility and liability, for your use of or reliance on any of these resources. Third-party resources may be updated, changed, or terminated at any time, so the information here may be out of date or inaccurate.  Any person using or offering this software in connection with providing software, goods or services to third parties shall advise such third parties of these license terms, disclaimers and exclusions of liability.
+See LICENSE for copyright and license terms. The Arisen Foundation and PeepsLabs makes their contribution on a voluntary basis, as a member of the Arisen community and is not responsible for ensuring the overall performance of the software or any related applications. We make no representation, warranty, guarantee or undertaking in respect of the software or any related documentation, whether expressed or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. In no even shall we be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or documentation or the use or other dealings in the software or documentation. Any test results or performance figures are indicative and will not reflect performance under all conditions. Any reference to any third part or third-party product, service or other resource is not an endorsement or recommendation by Arisen Foundation or Satoshi Las. We are not responsible, and disclaim any and all responsibility and liability, for your use of or reliance on any of these resources. Third-party resources may be updated, changed, or terminated at any time, so the information here may be out of date or inaccurate.  Any person using or offering this software in connection with providing software, goods or services to third parties shall advise such third parties of these license terms, disclaimers and exclusions of liability.
