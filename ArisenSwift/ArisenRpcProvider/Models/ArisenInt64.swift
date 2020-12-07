@@ -3,7 +3,7 @@
 //  ArisenSwift
 
 //  Created by Steve McCoole on 8/15/19
-//  Copyright (c) 2017-2019 block.one and its contributors. All rights reserved.
+//  Copyright (c) 2017-2019 peepslabs and its contributors. All rights reserved.
 //
 
 import Foundation

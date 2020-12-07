@@ -439,7 +439,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
-				ORGANIZATIONNAME = block.one;
+				ORGANIZATIONNAME = peepslabs;
 				TargetAttributes = {
 					6B80D25E21FA6DDF00716A7B = {
 						CreatedOnToolsVersion = 10.1;

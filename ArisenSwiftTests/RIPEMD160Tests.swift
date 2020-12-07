@@ -3,7 +3,7 @@
 //  ArisenSwiftTests
 //
 //  Created by Steve McCoole on 3/7/19.
-//  Copyright (c) 2017-2019 block.one and its contributors. All rights reserved.
+//  Copyright (c) 2017-2019 peepslabs and its contributors. All rights reserved.
 //
 
 import XCTest

@@ -3,7 +3,7 @@
 //  ArisenSwiftTests
 //
 //  Created by Serguei Vinnitskii on 3/19/19.
-//  Copyright (c) 2017-2019 block.one and its contributors. All rights reserved.
+//  Copyright (c) 2017-2019 peepslabs and its contributors. All rights reserved.
 //
 
 // swiftlint:disable line_length identifier_name

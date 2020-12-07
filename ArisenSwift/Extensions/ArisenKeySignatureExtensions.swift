@@ -3,7 +3,7 @@
 //  ArisenSwift
 //
 //  Created by Todd Bowden on 5/5/18.
-//  Copyright (c) 2017-2019 block.one and its contributors. All rights reserved.
+//  Copyright (c) 2017-2019 peepslabs and its contributors. All rights reserved.
 //
 
 // swiftlint:disable large_tuple

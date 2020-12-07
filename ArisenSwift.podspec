@@ -8,19 +8,19 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ArisenSwift'
-  s.version          = '0.4.0'
+  s.version          = '0.0.1'
   s.summary          = 'Arisen SDK for Swift - API for integrating with Arisen-based blockchains.'
   s.homepage         = 'https://github.com/ARISENIO/arisen-swift'
   s.license          = { :type => 'MIT', :text => <<-LICENSE
-                           Copyright (c) 2017-2019 block.one and its contributors.  All rights reserved.
+                           Copyright (c) 2017-2020 peepslabs and its contributors.  All rights reserved.
                          LICENSE
                        }
-  s.author           = { 'Todd Bowden' => 'todd.bowden@block.one',
-                         'Serguei Vinnitskii' => 'serguei.vinnitskii@block.one',
-                         'Farid Rahmani' => 'farid.rahmani@block.one',
-                         'Brandon Fancher' => 'brandon.fancher@block.one',
-                         'Mark Johnson' => 'mark.johnson@block.one',
-                         'Paul Kim' => 'paul.kim@block.one',
+  s.author           = { 'Todd Bowden' => 'todd.bowden@peepslabs',
+                         'Serguei Vinnitskii' => 'serguei.vinnitskii@peepslabs',
+                         'Farid Rahmani' => 'farid.rahmani@peepslabs',
+                         'Brandon Fancher' => 'brandon.fancher@peepslabs',
+                         'Mark Johnson' => 'mark.johnson@peepslabs',
+                         'Paul Kim' => 'paul.kim@peepslabs',
                          'Steve McCoole' => 'steve.mccoole@objectpartners.com',
                          'Ben Martell' => 'ben.martell@objectpartners.com' }
 

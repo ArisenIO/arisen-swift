@@ -29,10 +29,10 @@ To use Arisen's Swift SDK in your app, add the following pods to your Podfile:
 ```
 use_frameworks!
 target "Your Target" do
-   pod "ArisenSwift", "~> 0.1.3" #pod for this library
+   pod "ArisenSwift", "~> 0.0.1" #pod for this library
    # Providers For Arisen's Swift SDK
-   pod "ArisenSwiftAbirsnSerializationProvider", "~> 0.1.3"
-   pod "ArisenSwiftSoftkeySignatureProvider", "~> 0.1.3"
+   pod "ArisenSwiftAbirsnSerializationProvider", "~> 0.0.1"
+   pod "ArisenSwiftSoftkeySignatureProvider", "~> 0.0.1"
 end
 ```
 
@@ -158,7 +158,7 @@ Please consider the following ABI providers"
 - ```ArisenAbiProvider``` - Default implementation - Default ABI provider implementation in Arisen's Swift SDK (https://swift.arisen.network/Classes/ArisenAbiProvider.html).
 
 ## Using The Default RPC Provider
-Arisen's Swift SDK includes a default RPC Provider implementation (```ArisenRpcProvider```) for communicating with Arisen nodes using the [Arisen RPC API](https://api.arisen.network). Alternate RPC providers can be used assuming they conform to the minimal ```ArisenRpcProviderProtocol```. The core Arisen Swift SDK library depends only on the five RPC endpoints set forth in that Protocol. Other endpoints, however, are exposed in the default ```ArisenRpcProvider```.
+Arisen's Swift SDK includes a default RPC Provider implementation (```ArisenRpcProvider```) for communicating with Arisen nodes using the [Arisen RPC API](https://greatchains.arisennodes.io). Alternate RPC providers can be used assuming they conform to the minimal ```ArisenRpcProviderProtocol```. The core Arisen Swift SDK library depends only on the five RPC endpoints set forth in that Protocol. Other endpoints, however, are exposed in the default ```ArisenRpcProvider```.
 
 Calls can be made to any of the available endpoints as follows:
 
@@ -183,11 +183,10 @@ If you're interested in contributing to Arisen's Swift SDK, here are some [Contr
 ## License
 [MIT](LICENSE.md)
 
-(C) 2019 Block.One
 (C) 2020 Arisen Foundation
 (C) 2020 PeepsLabs
 
-The original Swift SDK for Arisen, was developed by ```blockone-devops``` and has since been adopted by the Arisen Foundation, as well as the Arisen community. Arisen Foundation has no affiliation, whatsoever to Block.One.
+The original Swift SDK for Arisen, was developed by ```peeps-devops``` and has since been adopted by the Arisen Foundation, as well as the Arisen community. Arisen Foundation has no affiliation, whatsoever to peepslabs.
 
 ## Legal
 See LICENSE for copyright and license terms. The Arisen Foundation and PeepsLabs makes their contribution on a voluntary basis, as a member of the Arisen community and is not responsible for ensuring the overall performance of the software or any related applications. We make no representation, warranty, guarantee or undertaking in respect of the software or any related documentation, whether expressed or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. In no even shall we be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or documentation or the use or other dealings in the software or documentation. Any test results or performance figures are indicative and will not reflect performance under all conditions. Any reference to any third part or third-party product, service or other resource is not an endorsement or recommendation by Arisen Foundation or Satoshi Las. We are not responsible, and disclaim any and all responsibility and liability, for your use of or reliance on any of these resources. Third-party resources may be updated, changed, or terminated at any time, so the information here may be out of date or inaccurate.  Any person using or offering this software in connection with providing software, goods or services to third parties shall advise such third parties of these license terms, disclaimers and exclusions of liability.
