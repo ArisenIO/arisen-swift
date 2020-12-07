@@ -15,14 +15,7 @@ Pod::Spec.new do |s|
                            Copyright (c) 2017-2020 peepslabs and its contributors.  All rights reserved.
                          LICENSE
                        }
-  s.author           = { 'Todd Bowden' => 'todd.bowden@peepslabs',
-                         'Serguei Vinnitskii' => 'serguei.vinnitskii@peepslabs',
-                         'Farid Rahmani' => 'farid.rahmani@peepslabs',
-                         'Brandon Fancher' => 'brandon.fancher@peepslabs',
-                         'Mark Johnson' => 'mark.johnson@peepslabs',
-                         'Paul Kim' => 'paul.kim@peepslabs',
-                         'Steve McCoole' => 'steve.mccoole@objectpartners.com',
-                         'Ben Martell' => 'ben.martell@objectpartners.com' }
+  s.author           = { 'jared ' => 'jared@peepslabs' }
 
   s.source           = { :git => 'https://github.com/ARISENIO/arisen-swift.git', :tag => "v" + s.version.to_s }
 
